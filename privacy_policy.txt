@@ -1,0 +1,29 @@
+Single purpose description:
+The Mouse Position Tracker extension provides precise cursor coordinate tracking for developers and automation testing. It displays real-time mouse positions and allows saving coordinates for later use in automation scripts.
+
+Permission justification:
+- storage: Required to save user preferences and recorded mouse positions locally
+- activeTab: Needed to track mouse positions on the current tab
+- scripting: Required for injecting the coordinate overlay and tracking functionality
+- sidePanel: Used to display the coordinate tracking panel
+- Host permission (<all_urls>): Required to track mouse positions across all websites for automation purposes
+
+Remote code:
+No, I am not using Remote code
+
+Data Collection:
+- User Activity: Mouse position tracking and click coordinates
+- Website Content: No website content is collected
+- Personal Information: No personal information is collected
+- Health Information: No health information is collected
+- Financial Information: No financial information is collected
+- Authentication Information: No authentication information is collected
+- Personal Communications: No personal communications are collected
+- Location: No location data is collected
+- Web History: No web history is collected
+
+Data Usage Certifications:
+[x] I do not sell or transfer user data to third parties, outside of the approved use cases
+[x] I do not use or transfer user data for purposes that are unrelated to my item's single purpose
+[x] I do not use or transfer user data to determine creditworthiness or for lending purposes
+

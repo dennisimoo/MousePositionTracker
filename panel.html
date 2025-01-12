@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/panel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="tracking-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Tracking Active</span>
+            </div>
+        </div>
+
+        <div class="position-display">
+            <div class="coordinate-group">
+                <label>X:</label>
+                <span id="x-position">0</span>
+                <label>Y:</label>
+                <span id="y-position">0</span>
+                <button id="copy-position" title="Copy position">📋</button>
+            </div>
+        </div>
+
+        <div class="offset-controls">
+            <h3>Offset</h3>
+            <div class="offset-inputs">
+                <div class="input-group">
+                    <label>X:</label>
+                    <input type="number" id="x-offset" value="0">
+                </div>
+                <div class="input-group">
+                    <label>Y:</label>
+                    <input type="number" id="y-offset" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="recording-controls">
+            <button id="record-toggle" class="record-btn">Start Recording</button>
+            <button id="save-position" class="save-btn">Save Current</button>
+        </div>
+
+        <div class="saved-positions">
+            <h3>Saved Positions</h3>
+            <div id="positions-list" class="positions-list"></div>
+        </div>
+    </div>
+    <script src="scripts/panel.js"></script>
+</body>
+</html>

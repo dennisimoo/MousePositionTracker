@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-title">
+                <h1>Mouse Tracker</h1>
+            </div>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="tracking-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <span>Tracking</span>
+            </div>
+        </div>
+
+        <div class="coordinates-panel">
+            <div class="coordinate-group">
+                <div class="coordinate">
+                    <label>X:</label>
+                    <span id="x-position">0</span>
+                </div>
+                <div class="coordinate">
+                    <label>Y:</label>
+                    <span id="y-position">0</span>
+                </div>
+                <button id="copy-position" class="icon-button" title="Copy coordinates">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="offset-panel">
+            <h3>Offset Adjustment</h3>
+            <div class="offset-inputs">
+                <div class="input-group">
+                    <label>X:</label>
+                    <div class="input-with-controls">
+                        <button class="decrement"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="x-offset" value="0">
+                        <button class="increment"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Y:</label>
+                    <div class="input-with-controls">
+                        <button class="decrement"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="y-offset" value="0">
+                        <button class="increment"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-panel">
+            <button id="save-position" class="save-btn">
+                <i class="fas fa-save"></i>
+                Save Position
+            </button>
+        </div>
+
+        <div class="saved-positions">
+            <div class="panel-header">
+                <h3>Saved Positions</h3>
+                <button id="open-settings" class="settings-btn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+            <div id="positions-list" class="positions-list"></div>
+        </div>
+    </div>
+    <script src="scripts/popup.js"></script>
+</body>
+</html>
